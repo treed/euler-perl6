@@ -1,4 +1,4 @@
-my $primes_to = 13195; 
+my $primes_to = 500000; 
 sub get_primes($to) {
     say "getting primes to $to";
     my @primes = Array.new($to + 1);
@@ -26,3 +26,5 @@ for 2 .. $primes_to -> $number {
 }
 
 say "done generating primes";
+
+say @primes.elems;
